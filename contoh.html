@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <button type="button" class="btn btn-primary">Primary</button>
+    <button type="button" class="btn btn-secondary">Secondary</button>
+    <button type="button" class="btn btn-success">Success</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button type="button" class="btn btn-warning">Warning</button>
+    <button type="button" class="btn btn-info">Info</button>
+    <button type="button" class="btn btn-light">Light</button>
+    <button type="button" class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Link</button>
+
+    <div class="kalkulator-hide" id="kalkulator">
+      <div class="main">
+        <h2>Kalkulator</h2>
+        <form name="form">
+          <input class="textarea" readonly name="textarea">
+        </form>
+          <table>
+            <tr>
+              <td><input class="button btn-white" type="button" value="AC" onclick="clean()"></td>
+              <td><input class="button btn-white" type="button" value="C" onclick="back()"></td>
+              <td><input class="button btn-orange" type="button" value="/" onclick="insert(' / ')"></td>
+              <td><input class="button btn-orange" type="button" value="x" onclick="insert(' * ')"></td>
+            </tr>
+            <tr>
+              <td><input class="button" type="button" value="7" onclick="insert(7)"></td>
+              <td><input class="button" type="button" value="8" onclick="insert(8)"></td>
+              <td><input class="button" type="button" value="9" onclick="insert(9)"></td>
+              <td><input class="button btn-orange" type="button" value="-" onclick="insert(' - ')"></td>
+            </tr>
+            <tr>
+              <td><input class="button" type="button" value="4" onclick="insert(4)"></td>
+              <td><input class="button" type="button" value="5" onclick="insert(5)"></td>
+              <td><input class="button" type="button" value="6" onclick="insert(6)"></td>
+              <td><input class="button btn-orange" type="button" value="+" onclick="insert(' + ')"></td>
+            </tr>
+            <tr>
+              <td><input class="button" type="button" value="1" onclick="insert(1)"></td>
+              <td><input class="button" type="button" value="2" onclick="insert(2)"></td>
+              <td><input class="button" type="button" value="3" onclick="insert(3)"></td>
+              <td rowspan=2><input style="height:106px;" class="button btn-orange" type="button" value="=" onclick="equal()"></td>
+            </tr>
+            <tr>
+              <td><input class="button" type="button" value="0" onclick="insert(0)"></td>
+              <td><input class="button" type="button" value="00" onclick="insert('00')"></td>
+              <td><input class="button" type="button" value="." onclick="insert('.')"></td>
+            </tr>
+          </table>
+        </div>
+    </div>
+
+<a href="D:\File Kuliah\Coding\html\Biodata\kalkulator.html" class="btn btn-primary disabled" tabindex="-1" role="button" aria-disabled="true">Primary link</a>
+<a href="D:\File Kuliah\Coding\html\Biodata\kalkulator.html" class="btn btn-secondary disabled" tabindex="-1" role="button" aria-disabled="true">Link</a>
+    </body>
+</html>
